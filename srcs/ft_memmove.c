@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 12:06:32 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 12:54:14 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/08 13:28:31 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	str[5000];
+	unsigned char	str[sizeof(src)];
 	size_t			i;
 
 	i = 0;

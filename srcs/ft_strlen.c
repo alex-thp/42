@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/08 13:00:58 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 14:41:20 by ade-temm         ###   ########.fr       */
+/*   Created: 2019/10/08 14:57:41 by ade-temm          #+#    #+#             */
+/*   Updated: 2019/10/08 15:01:45 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
 	i = 0;
-	while (i < n && *(unsigned char*)s != (unsigned char)c)
-	{
+	while (s[i])
 		i++;
-		s++;
-	}
-	if (i == n)
-		return (NULL);
-	return ((void*)s);
+	return (i);
 }
