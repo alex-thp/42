@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/07 14:24:41 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 11:45:53 by ade-temm         ###   ########.fr       */
+/*   Created: 2019/10/08 11:45:06 by ade-temm          #+#    #+#             */
+/*   Updated: 2019/10/08 12:01:45 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include "../includes/ft.h"
 
-# include <string.h>
-# include <unistd.h>
-# include <stdlib.h>
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+{
+	size_t i;
 
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
-
-#endif
+	i = 0;
+	while (i < n && *(unsigned char *)src != c)
+	{
+		*(unsigned char *)dst = *(unsigned char *)src;
+		dst++;
+		src++;
+		i++;
+	}
+	if (i == n)
+		return (NULL);
+	return (++dst);
+}
