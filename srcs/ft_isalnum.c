@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 16:29:12 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 16:31:07 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/08 16:42:04 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_isalnum(int c)
 {
-	if (ft_isalpha(c) == !1 || ft_isdigit(c) == 1)
+	if (ft_isalpha(c) == 1 || ft_isdigit(c) == 1)
 		return (1);
 	return (0);
 }
