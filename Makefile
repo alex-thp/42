@@ -22,10 +22,12 @@ ft_strnstr.c \
 ft_strrchr.c \
 ft_tolower.c \
 ft_toupper.c \
+ft_atoi.c \
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-MAIN = ../../mes_mains/main_strnstr.c
+FUNCTION=atoi
+MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
 
