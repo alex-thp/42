@@ -26,7 +26,7 @@ ft_atoi.c \
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-FUNCTION=atoi
+FUNCTION=calloc
 MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
