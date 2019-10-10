@@ -25,10 +25,11 @@ ft_toupper.c \
 ft_atoi.c \
 ft_calloc.c \
 ft_strdup.c \
+ft_substr.c \
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-FUNCTION=strdup
+FUNCTION=substr
 MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
