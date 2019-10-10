@@ -1,7 +1,7 @@
 CFLAGS =-Wall -Werror -Wextra
 EXEC =exec
 PATH =srcs/
-SRC_FILE =ft_bzero.c \
+SRC_FILE = ft_bzero.c \
 ft_isalnum.c \
 ft_isalpha.c \
 ft_isascii.c \
@@ -23,10 +23,12 @@ ft_strrchr.c \
 ft_tolower.c \
 ft_toupper.c \
 ft_atoi.c \
+ft_calloc.c \
+ft_strdup.c \
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-FUNCTION=calloc
+FUNCTION=strdup
 MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}

@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/09 17:15:49 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/10 11:26:21 by ade-temm         ###   ########.fr       */
+/*   Created: 2019/10/10 11:11:42 by ade-temm          #+#    #+#             */
+/*   Updated: 2019/10/10 11:33:18 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft.h"
 #include <errno.h>
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_strdup(const char *s1)
 {
-	void	*result;
+	char	*result;
+	int		i;
 
-	if (count == 0 || size == 0)
+	i = 0;
+	while (s1[i])
+		i++;
+	if (!(result = malloc(sizeof(char) * (i + 1))))
 	{
 		errno = ENOMEM;
 		return (NULL);
 	}
-	result = malloc(count * size);
-	ft_bzero(result, (size * count));
+	i = 0;
+	while (s1[i])
+	{
+		result[i] = s1[i];
+		i++;
+	}
+	result[i] = '\0';
 	return (result);
 }
