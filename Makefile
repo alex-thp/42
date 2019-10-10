@@ -28,10 +28,11 @@ ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
 ft_strtrim.c \
+ft_split.c \
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-FUNCTION=strtrim
+FUNCTION=split
 MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
