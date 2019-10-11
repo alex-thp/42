@@ -30,10 +30,11 @@ ft_strjoin.c \
 ft_strtrim.c \
 ft_split.c \
 ft_itoa.c \
+ft_strmapi.c
 
 SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
 OBJS = ${SRC:.c=.o}
-FUNCTION=itoa
+FUNCTION=strmapi
 MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
