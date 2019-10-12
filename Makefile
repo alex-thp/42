@@ -1,6 +1,16 @@
 CFLAGS =-Wall -Werror -Wextra
 EXEC =libft.a
 PATH =srcs/
+SUPP = ft_lstnew.c \
+ft_lstadd_front.c \
+ft_lstsize.c \
+ft_lstlast.c \
+ft_lstadd_back.c \
+ft_lstdelone.c \
+ft_lstclear.c \
+ft_lstiter.c \
+ft_lstmap.c \
+
 SRC_FILE = ft_bzero.c \
 ft_isalnum.c \
 ft_isalpha.c \
@@ -38,6 +48,7 @@ ft_putnbr_fd.c \
 
 SRC = ${SRC_FILE}
 OBJS = ${SRC:.c=.o}
+BONUS = ${SUPP:.c=.o}
 FUNCTION=strmapi
 
 all: ${EXEC}
@@ -47,13 +58,17 @@ ${EXEC}: ${OBJS}
 	ranlib ${EXEC}
 
 .c.o:  ${SRC}
-	gcc ${CFLAGS} -c -Iincludes $< -o ${<:.c=.o}
+	gcc ${CFLAGS} -c -I. $< -o ${<:.c=.o}
 
 clean:
-	rm -f ${OBJS}
+	rm -f ${OBJS} ${BONUS}
 
 fclean: clean
 
 	rm ${EXEC}
+
+make bonus : ${BONUS} ${OBJS}
+	ar rcs ${EXEC} ${OBJS} ${BONUS}
+	ranlib ${EXEC}
 
 re: fclean all
