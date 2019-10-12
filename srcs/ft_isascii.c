@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 16:31:34 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 16:33:31 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:56:12 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 int		ft_isascii(int c)
 {

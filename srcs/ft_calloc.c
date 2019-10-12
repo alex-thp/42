@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 17:15:49 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/10 11:26:21 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:56:01 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 #include <errno.h>
 
 void	*ft_calloc(size_t count, size_t size)

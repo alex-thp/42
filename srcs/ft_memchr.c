@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 13:00:58 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 14:41:20 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:56:57 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

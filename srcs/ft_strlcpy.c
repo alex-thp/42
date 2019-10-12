@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 12:46:55 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/09 12:58:13 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:50 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {

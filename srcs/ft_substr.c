@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 11:35:28 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/10 11:44:54 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:58:14 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

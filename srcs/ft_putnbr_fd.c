@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 17:38:15 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/11 17:48:51 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:23 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

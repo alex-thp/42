@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 13:05:13 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/09 13:49:12 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:47 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

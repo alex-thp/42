@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 17:17:00 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/11 17:24:18 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:57 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

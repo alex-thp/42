@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 14:57:41 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 15:01:45 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:53 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlen(const char *s)
 {

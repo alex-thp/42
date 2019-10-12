@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 11:42:24 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/09 11:42:48 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:58:17 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 int		ft_tolower(int c)
 {

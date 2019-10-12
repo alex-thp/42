@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/07 15:14:49 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/07 15:28:01 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:55:55 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

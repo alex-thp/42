@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/11 16:38:53 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/11 17:02:40 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:56:25 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 int		ft_size_int(int n)
 {

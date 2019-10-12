@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 11:45:06 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/08 12:01:45 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:56:54 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 12:31:43 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/09 12:37:22 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:58:00 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

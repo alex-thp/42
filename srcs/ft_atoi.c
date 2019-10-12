@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 15:59:40 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/09 16:56:40 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:55:56 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 
 int		ft_atoi(const char *str)
 {

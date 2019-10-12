@@ -6,11 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 11:11:42 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/10 11:33:18 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 13:57:41 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft.h"
+#include "../includes/libft.h"
 #include <errno.h>
 
 char	*ft_strdup(const char *s1)
