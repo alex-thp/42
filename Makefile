@@ -1,5 +1,5 @@
 CFLAGS =-Wall -Werror -Wextra
-EXEC =exec
+EXEC =libft.a
 PATH =srcs/
 SRC_FILE = ft_bzero.c \
 ft_isalnum.c \
@@ -36,15 +36,15 @@ ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c \
 
-SRC = ${addprefix ${PATH}, ${SRC_FILE}} ${MAIN}
+SRC = ${SRC_FILE}
 OBJS = ${SRC:.c=.o}
 FUNCTION=strmapi
-MAIN = ../../mes_mains/main_${FUNCTION}.c
 
 all: ${EXEC}
 
 ${EXEC}: ${OBJS}
-	gcc ${CFLAGS} ${OBJS} -o ${EXEC}
+	ar rcs ${EXEC} ${OBJS}
+	ranlib ${EXEC}
 
 .c.o:  ${SRC}
 	gcc ${CFLAGS} -c -Iincludes $< -o ${<:.c=.o}
@@ -54,16 +54,6 @@ clean:
 
 fclean: clean
 
-	rm exec
+	rm ${EXEC}
 
 re: fclean all
-
-make bonus:
-ft_lstnew.c
-ft_lstadd_front.c
-ft_lstsize.c
-ft_lstadd_back.c
-ft_lstdelone.c
-ft_lstclear.c
-ft_lstiter.c
-ft_lstmap.c
