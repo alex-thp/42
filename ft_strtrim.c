@@ -6,12 +6,11 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 11:57:44 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:16:46 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 14:25:42 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_isset(char c, char const *set)
 {
