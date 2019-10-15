@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 12:46:55 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:16:25 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/15 14:16:17 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	if (dstsize == 0)
-	{
-		dst[0] = '\0';
 		return (ft_strlen(src));
-	}
 	while (src[i] && i != dstsize - 1)
 	{
 		dst[i] = src[i];

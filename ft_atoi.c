@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 15:59:40 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:14:32 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 17:03:33 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ int		ft_atoi(const char *str)
 	i = 0;
 	result = 0;
 	sign = 1;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == 'r'
-	|| str[i] == 'v' || str[i] == 'f' || str[i] == 32)
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 	{

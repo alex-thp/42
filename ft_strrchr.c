@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 12:13:35 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:16:43 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/15 14:29:39 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 			j = i;
 		i++;
 	}
+	if (c == '\0')
+		return ((char*)&s[i]);
 	return (j > -1 ? (char*)&s[j] : NULL);
 }

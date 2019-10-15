@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 11:45:06 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:15:21 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/12 16:07:17 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	if (i == n)
 		return (NULL);
+	*(unsigned char *)dst = *(unsigned char *)src;
 	return (++dst);
 }

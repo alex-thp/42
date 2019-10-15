@@ -1,6 +1,6 @@
 CFLAGS =-Wall -Werror -Wextra
-EXEC =libft.a
-PATH =srcs/
+NAME = libft.a
+PATH = srcs/
 SUPP = ft_lstnew.c \
 ft_lstadd_front.c \
 ft_lstsize.c \
@@ -51,11 +51,11 @@ OBJS = ${SRC:.c=.o}
 BONUS = ${SUPP:.c=.o}
 FUNCTION=strmapi
 
-all: ${EXEC}
+all: ${NAME}
 
-${EXEC}: ${OBJS}
-	ar rcs ${EXEC} ${OBJS}
-	ranlib ${EXEC}
+$(NAME): ${OBJS}
+	ar rcs ${NAME} ${OBJS}
+	ranlib ${NAME}
 
 .c.o:  ${SRC}
 	gcc ${CFLAGS} -c -I. $< -o ${<:.c=.o}
@@ -65,10 +65,10 @@ clean:
 
 fclean: clean
 
-	rm ${EXEC}
+	rm ${NAME}
 
 make bonus : ${BONUS} ${OBJS}
-	ar rcs ${EXEC} ${OBJS} ${BONUS}
-	ranlib ${EXEC}
+	ar rcs ${NAME} ${OBJS} ${BONUS}
+	ranlib ${NAME}
 
-re: fclean all
+re: clean all

@@ -6,7 +6,7 @@
 /*   By: ade-temm <ade-temm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 13:46:00 by ade-temm          #+#    #+#             */
-/*   Updated: 2019/10/12 14:16:05 by ade-temm         ###   ########.fr       */
+/*   Updated: 2019/10/15 16:48:03 by ade-temm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,19 @@ int		ft_count_word(char const *str, char c)
 	return (count);
 }
 
-char	*ft_copy_word(char const *s, char c, int k)
+char	*ft_copy_word(char const *s, char c)
 {
 	char	*result;
 	int		i;
 
 	i = 0;
-	while (s[k + i] != c)
+	while (s[i] != c && s[i] != '\0')
 		i++;
-	result = malloc(sizeof(char) * i);
+	result = ft_calloc(i + 1, sizeof(char));
 	i = 0;
-	while (s[k + i] != c)
+	while (s[i] != c && s[i])
 	{
-		result[i] = s[k + i];
+		result[i] = s[i];
 		i++;
 	}
 	result[i] = '\0';
@@ -59,23 +59,21 @@ char	*ft_copy_word(char const *s, char c, int k)
 char	**ft_split(char const *s, char c)
 {
 	int		i;
-	int		j;
-	int		k;
 	char	**strs;
 
 	i = ft_count_word(s, c);
-	j = 0;
-	k = 0;
-	strs = malloc(sizeof(char*) * i + 1);
-	strs[i] = 0;
-	while (j < i)
+	if (!(strs = malloc(sizeof(char*) * (i + 1))))
+		return (0);
+	strs[i] = NULL;
+	i = 0;
+	while (strs[i])
 	{
-		while (ft_isset(s[k], c) == 1)
-			k++;
-		strs[j] = ft_copy_word(s, c, k);
-		while (ft_isset(s[k], c) == 0)
-			k++;
-		j++;
+		while (*s == c)
+			s++;
+		strs[i] = ft_copy_word(s, c);
+		while (*s != c && *s)
+			s++;
+		i++;
 	}
 	return (strs);
 }
